@@ -21,7 +21,6 @@ FormView.bindEvents = function () {
     this.on('submit', e => e.preventDefault());
     this.inputEl.addEventListener('keyup', e => this.onKeyup(e));
     this.resetEl.addEventListener('click', e => this.onClick(e));
-
 }
 
 FormView.setValue = function(value) {
@@ -49,8 +48,5 @@ FormView.onReset = function () {
     this.emit('@reset', { input: this.inputEl.value });
     this.showResetBtn(false);
 }
-
-
-//@reset
 
 export default FormView

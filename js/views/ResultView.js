@@ -13,7 +13,6 @@ ResultView.setup = function (el) {
 }
 
 ResultView.render = function (data = []) {
-    console.log(tag, 'render()', data);
     this.el.innerHTML = data.length ? this.getSearchResultHtml(data) : this.message.NO_RESULT;
     this.show();
 }
